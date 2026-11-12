@@ -1,0 +1,133 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #18232e;
+  background: #f5f6f8;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+main {
+  max-width: 820px;
+  margin: auto;
+  padding: 72px 28px;
+}
+h1 {
+  font-size: clamp(40px, 8vw, 70px);
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+  margin: 20px 0 24px;
+}
+h1 span {
+  color: #315ae7;
+}
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  color: #526074;
+}
+.intro {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #526074;
+  margin-bottom: 42px;
+}
+section {
+  background: white;
+  border: 1px solid #dce1e8;
+  border-radius: 12px;
+  padding: 26px 28px;
+  margin: 18px 0;
+}
+h2 {
+  font-size: 18px;
+  margin: 0 0 16px;
+}
+p {
+  line-height: 1.8;
+}
+code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.9em;
+  overflow-wrap: anywhere;
+}
+.endpoint {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  background: #f3f5f9;
+  padding: 16px;
+  border-radius: 8px;
+}
+.endpoint code {
+  min-width: 0;
+}
+button {
+  flex-shrink: 0;
+  border: 1px solid #b5c1df;
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: #1749d1;
+  background: white;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+}
+.status,
+.muted,
+footer {
+  color: #687588;
+  font-size: 13px;
+}
+.flow {
+  padding-left: 22px;
+  margin: 0;
+}
+.flow li {
+  padding: 7px 0 12px 6px;
+}
+.flow b {
+  display: block;
+  margin-bottom: 4px;
+}
+.flow span {
+  font-size: 14px;
+  color: #526074;
+  line-height: 1.8;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+a {
+  color: #1749d1;
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
+}
+footer {
+  margin-top: 30px;
+  line-height: 1.8;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #315ae7;
+  outline-offset: 3px;
+}
+@media (max-width: 600px) {
+  main {
+    padding: 36px 20px;
+  }
+  section {
+    padding: 22px 20px;
+  }
+  .endpoint {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

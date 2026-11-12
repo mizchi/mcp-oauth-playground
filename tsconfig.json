@@ -1,0 +1,34 @@
+{
+  "extends": "./.void/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": [
+      "void/env",
+      "vite/client",
+      "node",
+      "@cloudflare/workers-types",
+      "@cloudflare/vitest-plugin/types"
+    ]
+  },
+  "include": [
+    "src",
+    "pages",
+    "routes",
+    "middleware",
+    "crons",
+    "queues",
+    "db",
+    "tests",
+    "dev",
+    "hono",
+    "snippets",
+    "e2e",
+    "*.ts"
+  ]
+}

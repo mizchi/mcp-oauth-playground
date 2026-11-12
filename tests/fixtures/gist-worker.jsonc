@@ -1,0 +1,23 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "mcp-oauth-gist-test",
+  "main": "gist-server.ts",
+  "tsconfig": "../../hono/tsconfig.json",
+  "compatibility_date": "2026-11-05",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "vars": {
+    "PUBLIC_ORIGIN": "http://localhost:8793",
+    "ENABLE_DCR": "true",
+    "ALLOWED_GITHUB_USER_IDS": "73962",
+    "GITHUB_CLIENT_ID": "fixture-client",
+    "GITHUB_CLIENT_SECRET": "fixture-secret",
+  },
+  "kv_namespaces": [{ "binding": "OAUTH_KV", "id": "00000000000000000000000000000000" }],
+  "ratelimits": [
+    {
+      "name": "AUTH_RATE_LIMITER",
+      "namespace_id": "1005",
+      "simple": { "limit": 60, "period": 60 },
+    },
+  ],
+}

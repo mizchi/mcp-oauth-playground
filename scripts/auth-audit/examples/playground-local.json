@@ -1,0 +1,9 @@
+{
+  "resource": "http://localhost:5173/mcp",
+  "redirectUri": "http://localhost:5173/oauth/audit-callback",
+  "register": true,
+  "adapter": "../adapters/playground-local.mjs",
+  "scopes": ["mcp:read", "offline_access"],
+  "forbiddenScope": "mcp:admin",
+  "timeoutMs": 20000
+}

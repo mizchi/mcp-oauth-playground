@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["@cloudflare/workers-types", "node"]
+  },
+  "include": [
+    "*.ts",
+    "../src/**/*.ts",
+    "../dev/local-authorization-server.ts",
+    "../dev/local-identity-provider.ts"
+  ]
+}
